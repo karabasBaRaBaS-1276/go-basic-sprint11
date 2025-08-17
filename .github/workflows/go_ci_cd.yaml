@@ -71,7 +71,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.8.0
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/hello-golang
+          images: ${{ secrets.DOCKER_USERNAME }}/go-basic-sprint11
 
       - name: Build and push Docker Image
         uses: docker/build-push-action@v6.18.0
